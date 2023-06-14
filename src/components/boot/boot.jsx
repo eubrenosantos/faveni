@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import style from "./boot.module.css";
-import { } from "react-icons";
+import {} from "react-icons";
 import { TbMessageChatbot, TbSend } from "react-icons/tb";
 import { IoIosClose } from "react-icons/io";
 import MessageBoot from "./message";
@@ -25,7 +25,6 @@ const Boot = (props) => {
         },
       ]);
 
-
       if (creator) {
         BootResponde(mensagem);
         document.querySelector("#usermsn").value = "";
@@ -33,7 +32,7 @@ const Boot = (props) => {
       }
       scrollToEnd();
     } else {
-      return
+      return;
     }
   };
 
@@ -42,7 +41,8 @@ const Boot = (props) => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer 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`,
+        Authorization:
+          "Bearer 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",
       },
       body: JSON.stringify({
         model: "gpt-3.5-turbo",
@@ -50,21 +50,25 @@ const Boot = (props) => {
           {
             role: "user",
             content:
-              "responda tudo em portugues, de uma forma dinamica e fluida e seja muit simpático",
+              "Agora seu nome é Jaque e você é uma ia da falcudade faveni rio preto, você está aqui para responder dúvidas dos clientes da faculdade e ajudalos no que for preciso, e você será o mais genitl e acolhedora possível e tentará responder todas as dúvidas que eles tiverem",
           },
           {
             role: "user",
             content:
-              "Agora seu nome é Jaque e sua função é tirar todas as dúvidas e ajudar os clientes da Faveni",
+              "Cursos disponiveis: SERVIÇO SOCIAL LETRAS(Português, Inglês e Espanhol) DIREITO GEOGRAFIA HISTÓRIA FILOSOFIA ARTES VISUAIS ENFERMAGEM FÍSICA QUÍMICA MATEMÁTICA EDUCAÇÃO FÍSICA EDUCAÇÃO ESPECIAL SOCIOLOGIA BIOLOGIA PEDAGOGIA Engenharia Ciências ",
           },
           {
             role: "user",
-            content:
-              "responda tudo em portugues e de uma forma dinamica e fluida",
+            content: `Nossos diferenciasi: 'Cursos com nota máxima no MEC', 'Faculdade com selo de excelência no Reclame Aqui
+', 'Estude em qualquer lugar no Brasil
+', 'Cursos 100% online EAD
+' , 'Cursos intensivos de qualidade
+'  `,
           },
-          { role: "user", content: pergunta }
+
+          { role: "user", content: pergunta },
         ],
-        temperature: 0.6,
+        temperature: 0.3,
       }),
     })
       .then((response) => response.json())
@@ -89,9 +93,9 @@ const Boot = (props) => {
         <div className={style.ChatBoot}>
           <div className={style.HeaderChatBoot}>
             <div className={style.rowww}>
-              <img src="https://media.licdn.com/dms/image/D4D03AQFkwIVUj3P0qA/profile-displayphoto-shrink_100_100/0/1680559130777?e=1692230400&v=beta&t=zXvMcYvV8GN69k52qJDqxHsfFmYpPp3BcaFqi0XIjKA" />
+              <img src={props.img} />
 
-              <span>Breno Santos</span>
+              <span>{props.name}</span>
             </div>
 
             <IoIosClose onClick={HandleClickShowAndHide} />

@@ -36,7 +36,7 @@ const app = () => {
         <Popoup content={contentPopoup} setVisivel={setVisiblyPopoup} />
       )}
 
-      <Boot />
+      <Boot img="https://image.lexica.art/full_jpg/30107f60-35e7-4ac0-a16d-44c748132c8d" name={"Jaque"}/>
 
       <HeaderHome />
 
