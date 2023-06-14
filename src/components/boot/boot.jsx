@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import style from "./boot.module.css";
-import {} from "react-icons";
+import { } from "react-icons";
 import { TbMessageChatbot, TbSend } from "react-icons/tb";
 import { IoIosClose } from "react-icons/io";
 import MessageBoot from "./message";
@@ -16,24 +16,24 @@ const Boot = (props) => {
     }
   };
   const changeListMsn = (creator, mensagem) => {
-    if(mensagem){
-        setMessage((prevMessage) => [
-            ...prevMessage,
-            {
-                creator: creator,
-                message: mensagem,
-            },
-        ]);
+    if (mensagem) {
+      setMessage((prevMessage) => [
+        ...prevMessage,
+        {
+          creator: creator,
+          message: mensagem,
+        },
+      ]);
 
 
-        if (creator) {
-            BootResponde(mensagem);
-            document.querySelector("#usermsn").value = "";
-            scrollToEnd();
-        }
+      if (creator) {
+        BootResponde(mensagem);
+        document.querySelector("#usermsn").value = "";
         scrollToEnd();
-    }else{
-        
+      }
+      scrollToEnd();
+    } else {
+      return
     }
   };
 
@@ -42,7 +42,7 @@ const Boot = (props) => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer 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`,
+        Authorization: `Bearer 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`,
       },
       body: JSON.stringify({
         model: "gpt-3.5-turbo",
@@ -62,7 +62,7 @@ const Boot = (props) => {
             content:
               "responda tudo em portugues e de uma forma dinamica e fluida",
           },
-          { role: "user", content: pergunta },
+          { role: "user", content: pergunta }
         ],
         temperature: 0.6,
       }),
