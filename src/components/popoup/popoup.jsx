@@ -1,37 +1,42 @@
 import { useState } from "react"
 import style from "./popoup.module.css"
 import { FaWhatsapp, FaCheckCircle } from "react-icons/fa"
-const Popoup = (props) =>{
+const Popoup = (props) => {
 
 
+    const handleClick = () => {
 
+        window.open('https://api.whatsapp.com/send?phone=5517991736754', '_blank');
+    }
     function closePopoup() {
 
         document.querySelector("#Popoup").addEventListener("click", e => {
             if (e.srcElement.id === "Popoup") {
                 props.setVisivel(false)
             } else {
+
+                return
             }
         })
 
     }
 
-    
-
-    
-
-    
 
 
-    return(
 
-        
+
+
+
+
+    return (
+
+
 
         <>
-            
-        
-            
-            
+
+
+
+
             <div onClick={closePopoup} id="Popoup" className={style.popoup}>
 
                 <div className={style.popoupContente}>
@@ -49,7 +54,7 @@ const Popoup = (props) =>{
                     <div className={style.feature}><FaCheckCircle />Autorizados pelo MEC
                     </div>
 
-                    <button className={style.whatsapp}>
+                    <button onClick={handleClick} className={style.whatsapp}>
                         <FaWhatsapp /> Informações pelo Whatsapp
                     </button>
 
@@ -60,7 +65,7 @@ const Popoup = (props) =>{
                 </div>
 
             </div>
-        
+
         </>
 
     )

@@ -46,6 +46,20 @@ body {
     width: 100%;
 }
 
+.whatsapp{
+    background-color: #25d366;
+    padding: 10px 15px;
+    border-radius: 999px;
+    color: var(--white-500) !important;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.whatsapp svg{
+   width: 20px;
+   height: 20px;
+}
+
 .cursers h1 {
     color: var(--green-500);
     font-weight: 700;

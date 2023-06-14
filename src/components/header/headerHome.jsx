@@ -1,5 +1,6 @@
 import style from "./header.module.css"
-import { FaSearch } from "react-icons/fa"
+import { FaSearch, FaWhatsapp } from "react-icons/fa"
+
 const HeaderHome = ()=>{
 
     
@@ -21,15 +22,14 @@ const HeaderHome = ()=>{
 
                     <div className={style.row}>
 
-                        <a href="#">HOME</a>
+                        <a href="./">HOME</a>
                         <a href="#">PÓS-GRADUAÇÃO</a>
-                        <a href="#">CAPACITAÇÃO</a>
-                        <a href="#">CONTATO</a>
+                        <a href="#">CAPACITAÇÃO</a>                        
+                        <a className="whatsapp" href="https://api.whatsapp.com/send?phone=5517991736754">
+                            <FaWhatsapp />FALE COM A GENTE</a>
 
-                        <div className={style.search}>
-                            <FaSearch/>
-                            <input type="text" name="" id="search"  placeholder="O que está buscando?"/>
-                        </div>
+
+                        
 
 
                     </div>

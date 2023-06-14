@@ -75,7 +75,7 @@ const Boot = (props) => {
       .then((response) => {
         changeListMsn(false, response.choices[0].message.content);
       })
-      .catch((error) => console.error(error));
+      .catch((error) => changeListMsn(false, "Não estamos disponíveis no momento, chame no whatsapp."));
   };
 
   const HandleClickShowAndHide = () => {
