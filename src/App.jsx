@@ -1,12 +1,13 @@
+import { useEffect, useState } from "react";
 import "./style.css";
-import Boot from "./components/boot/Boot";
 import Faq from "./components/faq/faq";
 import HeaderHome from "./components/header/headerHome";
 import Curso from "./components/cursos/cursos";
 import { ApiCursos } from "./helpers/api";
 import { funcoes } from "./helpers/fun";
 import Popoup from "./components/popoup/popoup";
-import { useEffect, useState } from "react";
+import Boot from "./components/boot/Boot";
+
 const app = () => {
   const [cursos, setCursos] = useState(ApiCursos);
   const [visiblyPopoup, setVisiblyPopoup] = useState(false);
