@@ -6,7 +6,6 @@ import Curso from "./components/cursos/cursos";
 import { ApiCursos } from "./helpers/api";
 import { funcoes } from "./helpers/fun";
 import Popoup from "./components/popoup/popoup";
-import Boot from "./components/boot/Boot";
 
 const app = () => {
   const [cursos, setCursos] = useState(ApiCursos);
@@ -36,7 +35,6 @@ const app = () => {
         <Popoup content={contentPopoup} setVisivel={setVisiblyPopoup} />
       )}
 
-      <Boot/>
 
       <HeaderHome />
 
