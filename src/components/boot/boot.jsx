@@ -42,7 +42,7 @@ const Boot = (props) => {
       headers: {
         "Content-Type": "application/json",
         Authorization:
-          "Bearer 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",
+          "Bearer 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",
       },
       body: JSON.stringify({
         model: "gpt-3.5-turbo",
