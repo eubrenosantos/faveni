@@ -1,0 +1,101 @@
+.popoup{
+    background-color: #000000df;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.popoupContente{
+    background-color: var(--white-500);
+    width: 50%;
+    height: fit-content;
+    border-radius: 15px;
+    padding: 20px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.popoupContente span{
+    background-color: var(--green-500);
+    color: var(--white-500);
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    
+
+}
+.popoupContente h1{
+    
+    color: var(--black-300);
+    font-family: var(--Font-500);
+    font-weight: 600;
+    font-size: 25px;
+}
+.popoupContente p{
+    
+    color: var(--black-300);
+    font-family: var(--Font-500);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.whatsapp{
+
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #25d366;
+    color: var(--white-500);
+    font-family: var(--Font-500);
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+.whatsapp:hover{
+
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #189b48;
+    color: var(--white-500);
+    font-family: var(--Font-500);
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+.whatsapp svg{ 
+
+    height: 20px;
+    width: 20px;
+
+}
+
+.feature{
+    width: 100%;
+    height: 40px;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 13px;
+    align-items: center;
+}

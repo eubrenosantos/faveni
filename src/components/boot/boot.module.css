@@ -1,0 +1,145 @@
+.bootCircle{
+    background-color: var(--green-500);
+    border-radius: 99px;
+    width: 59px;
+    height: 59px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 015px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.bootCircle:hover{
+    background-color: var(--green-600);
+}
+
+.bootCircle svg{
+    width: 32px;
+    height: 32px;
+    color: var(--white-500);
+}
+
+.ChatBoot{
+    background-color: var(--gray-500);
+    width: 300px;
+    height: 400px;
+        box-shadow: 8px 7px 7px 1px rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.HeaderChatBoot{
+
+    background-color: var(--white-500);
+    border-radius: 5px 5px 0 0;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+}
+.HeaderChatBoot svg{
+
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+}
+.HeaderChatBoot img{
+
+    width: 50px;
+    height: 50px;
+    border-radius: 99px;
+
+}
+
+.inputs{
+    background-color: var(--white-500);
+    height: 70px;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inputs input{
+    width: 100%;
+}
+
+.inputs svg{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.inputs svg:hover{
+    color: var(--green-500);
+}
+
+.rowww{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.messageBoot{
+    width: 100%;
+    height: 100%;
+    max-height: 150%;
+    overflow:scroll;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message{
+    width: fit-content;
+    line-height: 1.5;
+    padding: 12px;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: fit-content;
+    font-weight: 400;
+    font-size: 14px;
+    
+    
+}
+
+
+.messageBoot {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
+.messageBoot::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+.messageBoot::-webkit-scrollbar-track {
+    background: var(--green-500);
+    
+}
+
+.messageBoot:-webkit-scrollbar-thumb {
+    background-color: transparent;
+}

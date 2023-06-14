@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --green-500: #028040;
+    --green-600: #036031;
+    --brown-500: #d9aa8c;
+    --white-500: #ffffff;
+    --black-300: "#121212";
+    --gray-600: #cbcbcb;
+    --gray-500: #e0e0e0;
+    --gray-400: #fafafa;
+    --Font-500: "Poppins";
+    --black-300: #121212;
+
+    --logo: "https://faveni.edu.br/wp-content/uploads/sites/10/2019/07/logo.png"
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    transition: all ease-in .1s;
+    border: none;
+    box-sizing: border-box;
+    font-family: "Poppins";
+
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.filters {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.cursers {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.cursers h1 {
+    color: var(--green-500);
+    font-weight: 700;
+    padding: 2px 10px;
+    border-left: 5px solid var(--green-500);
+}
+
+label {
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+
+
+
+}
+
+label input,
+select {
+    background-color: var(--gray-500);
+    padding: 13px;
+    border-radius: 99px;
+}
+
+.listCursesr {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    align-items: center;
+    justify-self: center;
+    flex-wrap: wrap;
+
+}
+
+.Curso {
+    width: 240px;
+    height: 336px;
+    align-self: center;
+    border-radius: 10px;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    box-shadow: -9px -65px 51px 46px rgba(0, 0, 0, 0.566) inset;
+}
+
+.Curso:hover {
+    cursor: pointer;
+    box-shadow: -1px 2px 14px 0px rgba(136, 136, 136, 0.89);
+    box-shadow: -9px -65px 51px 46px #092a19ce inset;
+
+}
+
+.Curso:hover .contenteCurso {
+    display: flex;
+
+}
+
+.contenteCurso {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.contenteCurso span {
+    background-color: var(--green-500);
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 13px;
+    color: var(--white-500);
+}
+
+.contenteCurso p {
+    font-weight: 600;
+    color: var(--white-500);
+    font-size: 16px;
+}
+
+.roww {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+iframe {
+    border-radius: 10px;
+    border: 5px solid var(--brown-500);
+}
+
+.columnn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.roww .columnn {
+    max-width: 50%;
+}
+
+.columnn button {
+    background-color: var(--green-500);
+    color: var(--white-500);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.columnn button:hover {
+    background-color: var(--brown-500);
+    color: var(--white-500);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.aaaa {
+    background: url("https://faveni.edu.br/wp-content/uploads/sites/10/2019/03/bg1.jpg") !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+@media (max-width: 700px) {
+
+
+    .cursers {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+    label{
+        font-size: 12px;
+        max-width: 100%;
+    }
+
+    .filters {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 100%;
+    }
+    .filters input, .filters select {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+        .Curso {
+            width: 90%;
+            height: 336px;
+            align-self: center;
+            border-radius: 10px;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+            box-shadow: -9px -65px 51px 46px rgba(0, 0, 0, 0.566) inset;
+        }
+        .listCursesr {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            align-items: center;
+            justify-self: center;
+            flex-wrap: wrap;
+        
+        }
+
+        .roww{
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+        }
+        iframe{
+            max-width: 90%;
+        }
+
+        .columnn{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 90% !important;
+        }
+
+
+
+}
