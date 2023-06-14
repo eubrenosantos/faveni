@@ -4,7 +4,7 @@ import {} from "react-icons";
 import { TbMessageChatbot, TbSend } from "react-icons/tb";
 import { IoIosClose } from "react-icons/io";
 import MessageBoot from "./message";
-const Aauths = `Bearer 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`
+const Aauths = `Bearer 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`
 const Boot = (props) => {
   const [message, setMessage] = useState([]);
   const [showBoot, setShowBoot] = useState(false);
