@@ -209,7 +209,8 @@ iframe {
     .filters input, .filters select {
         max-width: 100%;
         padding: 10px;
-        height: 40px;
+        height: 45px;
+        color: var(--black-300);
     }
 
         .Curso {
@@ -238,7 +239,7 @@ iframe {
             padding: 0;
         }
         iframe{
-            max-width: 90%;
+            max-width: 100%;
         }
 
         .columnn{
