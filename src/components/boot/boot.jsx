@@ -4,7 +4,7 @@ import {} from "react-icons";
 import { TbMessageChatbot, TbSend } from "react-icons/tb";
 import { IoIosClose } from "react-icons/io";
 import MessageBoot from "./message";
-
+const Aauths = `Bearer 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`
 const Boot = (props) => {
   const [message, setMessage] = useState([]);
   const [showBoot, setShowBoot] = useState(false);
@@ -41,8 +41,7 @@ const Boot = (props) => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization:
-          "Bearer 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",
+        Authorization: Aauths,
       },
       body: JSON.stringify({
         model: "gpt-3.5-turbo",
