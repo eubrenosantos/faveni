@@ -106,6 +106,8 @@
     padding: 10px;
     display: flex;
     flex-direction: column;
+    scrollbar-width: thin;
+        scrollbar-color: transparent transparent;
     gap: 10px;
 }
 
@@ -125,10 +127,7 @@
 }
 
 
-.messageBoot {
-    scrollbar-width: thin;
-    scrollbar-color: transparent transparent;
-}
+
 
 .messageBoot::-webkit-scrollbar {
     width: 0px;
